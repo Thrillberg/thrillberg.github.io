@@ -3,6 +3,11 @@
   src: url('RivannaNF.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: "Berolina";
+  src: url('Berolina.ttf') format("truetype");
+}
+
 body {
   background-color: #F0E8DE;
   color: #393939;
@@ -45,4 +50,15 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 3rem 0;
+}
+
+.bass {
+  border: 1rem #393939 solid;
+  width: 100%;
+}
+
+.caption {
+  float: right;
+  font-family: "Berolina", Verdana, Tahoma;
+  font-size: 1.2rem;
 }
