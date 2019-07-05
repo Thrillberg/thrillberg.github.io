@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "RivannaNF";
+  src: url('RivannaNF.ttf') format("truetype");
+}
+
+body {
+  background-color: #F0E8DE;
+  color: #393939;
+  font-family: "RivannaNF", Verdana, Tahoma;
+}
+
+.container {
+  margin: 5rem auto;
+  width: 1024px;
+}
+
+.title {
+  border: 1rem #393939 solid;
+  font-size: 14rem;
+  position: relative;
+  text-align: center;
+}
+
+#klimt {
+  background: linear-gradient(rgba(255,255,255,0) 60%, #F0E8DE), url("Klimt.jpeg");
+  background-size: cover;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.name {
+  position: relative;
+}
+
+.ikons {
+  border: 1rem #393939 solid;
+  border-top: 0;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
