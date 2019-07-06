@@ -8,10 +8,20 @@
   src: url('Berolina.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: "Merriweather";
+  src: url('Merriweather-Regular.ttf') format("truetype");
+}
+
 body {
   background-color: #F0E8DE;
   color: #393939;
-  font-family: "RivannaNF", Verdana, Tahoma;
+  font-family: "Berolina", Verdana, Tahoma;
+}
+
+a {
+  color: #393939;
+  text-decoration: none;
 }
 
 .container {
@@ -19,8 +29,12 @@ body {
   width: 1024px;
 }
 
-.title {
+.framed {
   border: 1rem #393939 solid;
+}
+
+.title {
+  font-family: "RivannaNF", Verdana, Tahoma;
   font-size: 14rem;
   position: relative;
   text-align: center;
@@ -41,7 +55,6 @@ body {
 }
 
 .ikons {
-  border: 1rem #393939 solid;
   border-top: 0;
 }
 
@@ -61,4 +74,50 @@ body {
   float: right;
   font-family: "Berolina", Verdana, Tahoma;
   font-size: 1.2rem;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns .small-pane {
+  display: flex;
+  flex: 1;
+}
+
+.columns img {
+  align-self: center;
+  margin: 0 auto;
+  max-width: 20rem;
+}
+
+ul {
+  flex: 2;
+  font-family: "Berolina", Verdana, Tahoma;
+  font-size: 60px;
+  list-style: none;
+}
+
+li {
+  margin: 3rem 0;
+}
+
+.poem {
+  flex: 1;
+  font-size: 1.75rem;
+  font-family: "Merriweather", Verdana, Tahoma;
+  margin: 5rem 1rem;
+}
+
+.rhodes {
+  background:
+    linear-gradient(to right, transparent, #F0E8DE),
+    linear-gradient(to left, transparent, #F0E8DE),
+    linear-gradient(to top, transparent, #F0E8DE),
+    linear-gradient(to bottom, transparent, #F0E8DE),
+    url("rhodes.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
 }
